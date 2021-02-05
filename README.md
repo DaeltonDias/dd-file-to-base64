@@ -1,5 +1,5 @@
 # dd-file-to-base64
-Convert file to base64
+Convert file to base64 on the front end
 
 ### Installation
 ```shell
@@ -22,19 +22,19 @@ const file = input.files[0]; // get the first file in the list
 
 (async () => {
   try {
-    const data = await FileToBase64.toBase64(file);
+    const data = await FileToBase64.convert(file);
   } catch(err) {
     console.log(err);
   }
 })();
 
-FileToBase64.toBase64(file).then(data => {
+FileToBase64.convert(file).then(data => {
   console.log(data);
 }).catch(err => {
   console.log(err);
 });
 
-FileToBase64.toBase64(file, (data) => {
+FileToBase64.convert(file, (data) => {
   console.log(data);
 }, (err) => {
   console.log(err);
