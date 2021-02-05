@@ -23,19 +23,20 @@ const file = input.files[0]; // get the first file in the list
 (async () => {
   try {
     const data = await FileToBase64.convert(file);
+    console.log(data); // base64 file
   } catch(err) {
     console.log(err);
   }
 })();
 
 FileToBase64.convert(file).then(data => {
-  console.log(data);
+  console.log(data); // base64 file
 }).catch(err => {
   console.log(err);
 });
 
 FileToBase64.convert(file, (data) => {
-  console.log(data);
+  console.log(data); // base64 file
 }, (err) => {
   console.log(err);
 });
