@@ -3,7 +3,7 @@ Convert file to base64
 
 ### Installation
 ```shell
-$ npm install file-to-base64
+$ npm install dd-file-to-base64
 ```
 
 ### Use
